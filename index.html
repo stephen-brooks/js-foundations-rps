@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
+    <script src="/JS/js-foundations-rps/rps.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <script src="/JS/js-foundations-rps/rps.js"></script>
+    <header>
+        <div class = "heading"> Rage against the machine</div>
+        <div class = "sub-heading"> via Rock, Paper, Scissors</div>
+    </header>
+    <div class = "container">
+        <div id = "rps-buttons">
+            <button id="btn1" data-value="rock"> Rock </button>
+            <button id="btn2" data-value="paper"> Paper </button>
+            <button id="btn3" data-value="scissors"> Scissors</button>
+        </div>
+        <div class = "scoreboard">
+            <p>Player Score</p>    
+                <div id = "playerScore" data-value=0></div>
+            <p>Computer Score</p>
+                <div id = "computerScore" data-value=0></div>
+        </div>
+    </div>
+    <footer>
+        Designed by SB Industries
+    </footer>
 </body>
 </html>
