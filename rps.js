@@ -1,7 +1,6 @@
 function getComputerChoice() {
-    let values = ["rock","paper","scissors"],
-        valueToUse = values[Math.floor(Math.random() * values.length)];
-    return valueToUse;
+    const values = ["rock","paper","scissors"];
+    return values[Math.floor(Math.random() * values.length)]
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -42,7 +41,7 @@ function playRound(playerSelection, computerSelection) {
 function setScores(){
     document.getElementById("playerScore").innerHTML = playerScore.getAttribute('data-value');
     document.getElementById("computerScore").innerHTML = computerScore.getAttribute('data-value');
-};
+}
 
 function playRoundButton() {
     buttons.forEach((button)  => {
@@ -50,9 +49,9 @@ function playRoundButton() {
         button.addEventListener('click', () => {
             const playerSelection = button.getAttribute('data-value');
             
-            let computerSelection = getComputerChoice();
+            const computerSelection = getComputerChoice();
             
-            let res = playRound(playerSelection, computerSelection);
+            const res = playRound(playerSelection, computerSelection);
             
             if(res == 1){
                 alert(`You WIN ${playerSelection} beats ${computerSelection}`);
@@ -83,7 +82,7 @@ function playRoundButton() {
             }
         })
         });
-    };
+    }
 
 
 function game(){
